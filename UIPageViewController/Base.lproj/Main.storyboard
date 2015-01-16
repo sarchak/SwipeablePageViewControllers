@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="UIPageViewController" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,11 +16,122 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7fx-Wt-T4f">
+                                <rect key="frame" x="262" y="510" width="77" height="30"/>
+                                <state key="normal" title="Start Again">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="start:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="CbF-O6-CW2"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="7fx-Wt-T4f" secondAttribute="bottom" constant="60" id="rLb-Eb-Juk"/>
+                            <constraint firstAttribute="centerX" secondItem="7fx-Wt-T4f" secondAttribute="centerX" id="zOP-RD-Zh6"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="iop-Dm-Abe" appends="YES" id="iUM-f2-1cf"/>
+                            <outletCollection property="gestureRecognizers" destination="Qfr-8h-wxg" appends="YES" id="acz-AN-oyr"/>
+                        </connections>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="iop-Dm-Abe">
+                    <connections>
+                        <action selector="swiped:" destination="vXZ-lx-hvc" id="pGQ-JC-9lY"/>
+                    </connections>
+                </panGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="Qfr-8h-wxg">
+                    <connections>
+                        <action selector="swipeLeft:" destination="vXZ-lx-hvc" id="i0j-3G-1Tp"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="-236" y="364.99999999999994"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="iIq-Fp-N1A">
+            <objects>
+                <pageViewController storyboardIdentifier="PageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="vertical" spineLocation="none" id="Bep-um-nMU" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VDg-ab-LwG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="601" y="73"/>
+        </scene>
+        <!--Page Content View Controller-->
+        <scene sceneID="Mcb-Qa-wZZ">
+            <objects>
+                <viewController storyboardIdentifier="PageContentViewController" id="roR-jf-60k" customClass="PageContentViewController" customModule="UIPageViewController" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vgp-zF-2Zk"/>
+                        <viewControllerLayoutGuide type="bottom" id="LI5-me-Z7H"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wcI-r1-WlZ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bridge.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="Wqa-Gw-i6m">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="600" id="cFp-wh-rj8"/>
+                                    <constraint firstAttribute="width" constant="600" id="jSi-s3-APT"/>
+                                    <constraint firstAttribute="width" constant="400" id="qJC-pP-siR"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="cFp-wh-rj8"/>
+                                        <exclude reference="jSi-s3-APT"/>
+                                        <exclude reference="qJC-pP-siR"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact">
+                                    <mask key="constraints">
+                                        <exclude reference="jSi-s3-APT"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="cFp-wh-rj8"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <exclude reference="cFp-wh-rj8"/>
+                                        <exclude reference="qJC-pP-siR"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Way to Success" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v5j-cd-sLv">
+                                <rect key="frame" x="214" y="111" width="173" height="34.5"/>
+                                <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="25"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="v5j-cd-sLv" firstAttribute="top" secondItem="vgp-zF-2Zk" secondAttribute="bottom" constant="91" id="AfF-L2-BJs"/>
+                            <constraint firstItem="LI5-me-Z7H" firstAttribute="top" secondItem="Wqa-Gw-i6m" secondAttribute="bottom" id="Bwp-Sp-6iT"/>
+                            <constraint firstItem="Wqa-Gw-i6m" firstAttribute="top" secondItem="wcI-r1-WlZ" secondAttribute="top" id="IxX-Vi-gCy"/>
+                            <constraint firstAttribute="centerX" secondItem="v5j-cd-sLv" secondAttribute="centerX" id="PTL-AZ-j3t"/>
+                            <constraint firstAttribute="trailing" secondItem="Wqa-Gw-i6m" secondAttribute="trailing" id="faX-xJ-aLY"/>
+                            <constraint firstItem="Wqa-Gw-i6m" firstAttribute="leading" secondItem="wcI-r1-WlZ" secondAttribute="leading" id="uzS-yO-OQu"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bkImageView" destination="Wqa-Gw-i6m" id="QwI-Ff-7wt"/>
+                        <outlet property="heading" destination="v5j-cd-sLv" id="4Xx-wH-Wsp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wnd-Pv-cny" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="599" y="804.99999999999989"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bridge.jpeg" width="2100" height="1400"/>
+    </resources>
 </document>

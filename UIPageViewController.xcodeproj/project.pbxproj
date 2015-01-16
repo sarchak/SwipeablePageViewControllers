@@ -13,6 +13,15 @@
 		5632B6A01A68D61F00491E2D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5632B69F1A68D61F00491E2D /* Images.xcassets */; };
 		5632B6A31A68D61F00491E2D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5632B6A11A68D61F00491E2D /* LaunchScreen.xib */; };
 		5632B6AF1A68D61F00491E2D /* UIPageViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5632B6AE1A68D61F00491E2D /* UIPageViewControllerTests.swift */; };
+		5632B6BB1A68D6A700491E2D /* PageContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5632B6BA1A68D6A700491E2D /* PageContentViewController.swift */; };
+		5632B6C01A68D7D300491E2D /* bridge.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 5632B6BC1A68D7D300491E2D /* bridge.jpeg */; };
+		5632B6C11A68D7D300491E2D /* mountain.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 5632B6BD1A68D7D300491E2D /* mountain.jpeg */; };
+		5632B6C21A68D7D300491E2D /* snow.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 5632B6BE1A68D7D300491E2D /* snow.jpeg */; };
+		5632B6C31A68D7D300491E2D /* sunset.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 5632B6BF1A68D7D300491E2D /* sunset.jpeg */; };
+		5632B6D01A68EE4000491E2D /* pic1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 5632B6CC1A68EE4000491E2D /* pic1.jpeg */; };
+		5632B6D11A68EE4000491E2D /* pic2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5632B6CD1A68EE4000491E2D /* pic2.jpg */; };
+		5632B6D21A68EE4000491E2D /* pic3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 5632B6CE1A68EE4000491E2D /* pic3.jpeg */; };
+		5632B6D31A68EE4000491E2D /* pic4.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 5632B6CF1A68EE4000491E2D /* pic4.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +45,15 @@
 		5632B6A81A68D61F00491E2D /* UIPageViewControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIPageViewControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5632B6AD1A68D61F00491E2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5632B6AE1A68D61F00491E2D /* UIPageViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIPageViewControllerTests.swift; sourceTree = "<group>"; };
+		5632B6BA1A68D6A700491E2D /* PageContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageContentViewController.swift; sourceTree = "<group>"; };
+		5632B6BC1A68D7D300491E2D /* bridge.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bridge.jpeg; sourceTree = "<group>"; };
+		5632B6BD1A68D7D300491E2D /* mountain.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mountain.jpeg; sourceTree = "<group>"; };
+		5632B6BE1A68D7D300491E2D /* snow.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = snow.jpeg; sourceTree = "<group>"; };
+		5632B6BF1A68D7D300491E2D /* sunset.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sunset.jpeg; sourceTree = "<group>"; };
+		5632B6CC1A68EE4000491E2D /* pic1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pic1.jpeg; sourceTree = "<group>"; };
+		5632B6CD1A68EE4000491E2D /* pic2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pic2.jpg; sourceTree = "<group>"; };
+		5632B6CE1A68EE4000491E2D /* pic3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pic3.jpeg; sourceTree = "<group>"; };
+		5632B6CF1A68EE4000491E2D /* pic4.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pic4.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +101,7 @@
 				5632B69F1A68D61F00491E2D /* Images.xcassets */,
 				5632B6A11A68D61F00491E2D /* LaunchScreen.xib */,
 				5632B6961A68D61F00491E2D /* Supporting Files */,
+				5632B6BA1A68D6A700491E2D /* PageContentViewController.swift */,
 			);
 			path = UIPageViewController;
 			sourceTree = "<group>";
@@ -90,6 +109,14 @@
 		5632B6961A68D61F00491E2D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				5632B6CC1A68EE4000491E2D /* pic1.jpeg */,
+				5632B6CD1A68EE4000491E2D /* pic2.jpg */,
+				5632B6CE1A68EE4000491E2D /* pic3.jpeg */,
+				5632B6CF1A68EE4000491E2D /* pic4.jpeg */,
+				5632B6BC1A68D7D300491E2D /* bridge.jpeg */,
+				5632B6BD1A68D7D300491E2D /* mountain.jpeg */,
+				5632B6BE1A68D7D300491E2D /* snow.jpeg */,
+				5632B6BF1A68D7D300491E2D /* sunset.jpeg */,
 				5632B6971A68D61F00491E2D /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -192,9 +219,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5632B6C01A68D7D300491E2D /* bridge.jpeg in Resources */,
 				5632B69E1A68D61F00491E2D /* Main.storyboard in Resources */,
+				5632B6D01A68EE4000491E2D /* pic1.jpeg in Resources */,
 				5632B6A31A68D61F00491E2D /* LaunchScreen.xib in Resources */,
+				5632B6D11A68EE4000491E2D /* pic2.jpg in Resources */,
+				5632B6C11A68D7D300491E2D /* mountain.jpeg in Resources */,
+				5632B6C21A68D7D300491E2D /* snow.jpeg in Resources */,
+				5632B6C31A68D7D300491E2D /* sunset.jpeg in Resources */,
+				5632B6D21A68EE4000491E2D /* pic3.jpeg in Resources */,
 				5632B6A01A68D61F00491E2D /* Images.xcassets in Resources */,
+				5632B6D31A68EE4000491E2D /* pic4.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,6 +247,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5632B6BB1A68D6A700491E2D /* PageContentViewController.swift in Sources */,
 				5632B69B1A68D61F00491E2D /* ViewController.swift in Sources */,
 				5632B6991A68D61F00491E2D /* AppDelegate.swift in Sources */,
 			);
@@ -337,6 +373,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = UIPageViewController/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -347,6 +384,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = UIPageViewController/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
